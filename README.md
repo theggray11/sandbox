@@ -1,7 +1,7 @@
 # sandbox
 
-https://theggray11.github.io/sandbox/Google_chart_test.htm
+[Goog](https://theggray11.github.io/sandbox/Google_chart_test.htm)
+[tsn test] (www.tsn.ca/nhl)
 
-www.tsn.ca/nhl
 
 
