@@ -59,6 +59,9 @@ var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}
 		.bindPopup("<b>Pecket Mill</b><br />Baz's Old Place").openPopup();
 	L.marker([53.748894, -2.022638]).addTo(mymap)
 		.bindPopup("<b>Heptonstall Church</b><br />Hepstonstall Church").openPopup();
+	L.marker([53.755318, -2.003130]).addTo(mymap)
+		.bindPopup("<b>Baz Stone</b><br />Hepstonstall Church").openPopup();	
+	
 	
 	[53.763622, -2.005527]
 
@@ -66,6 +69,7 @@ var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}
 	L.polygon([
 		[53.739425, -2.008813],
 		[53.763622, -2.005527],
+		[53.755318, -2.003130],
 		[53.748894, -2.022638]
 	]).addTo(mymap).bindPopup("I am a Sacred Triangle");
 
