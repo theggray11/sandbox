@@ -33,6 +33,10 @@
     radius: 50
 }).addTo(mymap);
 	
+	 var controlLayers = L.control.layers( null, null, {
+  position: "topright",
+  collapsed: false
+ }).addTo(mymap);
 	
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
@@ -48,10 +52,6 @@ var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
 }).addTo(mymap);
 
-	 var controlLayers = L.control.layers( null, null, {
-  position: "topright",
-  collapsed: false
- }).addTo(mymap);
 	
 	L.marker([53.739444, -2.008782]).addTo(mymap)
 		.bindPopup("<b>Machpelah</b><br />Our Mill").openPopup();
@@ -61,9 +61,6 @@ var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}
 		.bindPopup("<b>Heptonstall Church</b><br />Hepstonstall").openPopup();
 	L.marker([53.755318, -2.003130]).addTo(mymap)
 		.bindPopup("<b>Baz Stone</b><br />Wainsgate").openPopup();	
-	
-	
-	[53.763622, -2.005527]
 
 	
 	L.polygon([
